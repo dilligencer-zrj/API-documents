@@ -1,0 +1,36 @@
+部署地址： 
+IP地址：123.56.247.133
+端口号：9010 http访问
+
+  
+代码文件结构+简单说明：
+代码路径 ： /var/www/django_chronic_disease 
+ 运行方式：apache下运行
+
+  环境要求：
+pip install django==1.8.6
+pip install django-cors-headers==2.1.0
+pip install mysql-python
+pip install mongoengine
+pip install pycurl
+pip install msgpack-python
+pip install pyjwt
+pip install elasticsearch
+pip install django-rest-swagger==2.0.5
+pip install djangorestframework==3.4.4
+pip install bs4
+pip install BeautifulSoup
+pip install fuzzywuzzy
+pip install html5lib
+pip install xlrd
+pip install xlwt
+pip install python-docx
+
+
+  部署命令：
+1、将工程项目放在/var/www/路径下
+2、配置apache 
+cd  /etc/apache2
+（1）sites-available 里面的django_chronic_disease.conf配置文件，设置虚拟环境路径等
+（2）sites-enabled 里面的django_chronic_disease.conf 是由sites-available 里面的django_chronic_disease.conf 生成的
+（3）ports.conf 配置监听端口，与django_chronic_disease.conf的保持一致
