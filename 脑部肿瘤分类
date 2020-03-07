@@ -1,0 +1,30 @@
+项目地址：
+服务器IP：123.56.247.133
+项目路径：/var/www/brain_django
+
+访问路径：
+IP地址：123.56.247.133
+端口：9504
+
+运行方式：
+Apache下运行
+配置文件路径：/etc/apache2/sites-enabled/brain_django.conf
+
+环境要求：
+pip install django==1.8.6
+pip install django-cors-headers==2.1.0
+pip install mysql-python
+pip install mongoengine
+pip install pycurl
+pip install msgpack-python
+pip install pyjwt
+pip install elasticsearch
+pip install django-rest-swagger==2.0.5
+pip install djangorestframework==3.4.4
+pip install bs4
+pip install BeautifulSoup
+pip install fuzzywuzzy
+pip install html5lib
+pip install xlrd
+pip install xlwt
+pip install python-docx
