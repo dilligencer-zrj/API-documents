@@ -1,0 +1,55 @@
+项目地址：
+https://github.com/yinchangchang/health_platform
+
+部署地址： 
+IP地址：39.106.142.184
+端口号：9501 http访问；9502 https访问
+  
+代码文件结构+简单说明：
+代码路径 ： /var/www/  
+ 运行方式：apache下运行
+文件结构：
+health_platform
+  +account:用户账户管理
+  +biology：生物样本信息库
+  +deathApi：
+  +file：存放需要读取的文件
+  +filesystem：文件系统上传下载
+  +health_examination：健康体检表
+  +health_platform：项目配置文件
+  +import_database：将外部CSV导入数据库
+  +medical_checklist：医学检查表
+  +static：swagger配置文件，无需更改
+  +traceApi：随访问卷
+  +vascular
+  +manage.py
+  +django.wsgi
+
+
+  环境要求：
+pip install django==1.8.6
+pip install django-cors-headers==2.1.0
+pip install mysql-python
+pip install mongoengine
+pip install pycurl
+pip install msgpack-python
+pip install pyjwt
+pip install elasticsearch
+pip install django-rest-swagger==2.0.5
+pip install djangorestframework==3.4.4
+pip install bs4
+pip install BeautifulSoup
+pip install fuzzywuzzy
+pip install html5lib
+pip install xlrd
+pip install xlwt
+pip install python-docx
+
+
+部署命令：
+1、将工程项目放在/var/www/路径下
+2、配置apache 
+cd  /etc/apache2
+（1）sites-available 里面的health_platform.conf 配置文件，设置虚拟环境路径等
+（2）sites-enabled 里面的health_platform.conf 是由sites-available 里面的health_platform.conf 生成的
+（3）ports.conf 配置监听端口，与health_platform.conf的保持一致
