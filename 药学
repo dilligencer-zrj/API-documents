@@ -1,0 +1,18 @@
+项目地址：https://github.com/xudongwang123/medication_platform
+部署地址：47.105.199.117/var/www/medication_platform
+代码文件结构+简单说明：
+代码路径：/var/www/medication_platform
+运行方式：Django测试运行, python manage.py runserver 0.0.0.0:8888
+文件结构：
+medication_platform
++account 用户账号管理
++vancomycin 万古霉素用药方案
+环境要求：
+pip install django==2.1.7
+pip install PyMySQL==0.9.3
+pip install coreapi==2.3.3
+pip install openapi-codec==1.3.2
+pip install djangorestframework==3.9.2
+pip install django-rest-swagger==2.2.0
+pip install django-cors-headers==2.5.0
+pip install mongoengine==0.17.0
