@@ -4,6 +4,7 @@ https://github.com/yinchangchang/health_platform
 部署地址： 
 IP地址：39.106.142.184
 端口号：9501 http访问；9502 https访问
+阿里云测试地址：123.56.247.133:9500
   
 代码文件结构+简单说明：
 代码路径 ： /var/www/  
