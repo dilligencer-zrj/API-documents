@@ -1,0 +1,50 @@
+项目地址：https://github.com/xudongwang123/LaserBreast
+部署地址：ubuntu@117.34.72.22 password:QWER1234qwer
+代码文件结构+简单说明：
+代码路径：/var/www/LaserBreast
+运行方式：Django测试运行, apache 部署
+文件结构：
+
+LaserBreast
++account 用户账号管理
++patient 病人信息录入、查看、修改、删除
++laser_breast 配置文件、swagger配置、url配置
+
+环境要求：
+pip install django==1.8.6
+pip install django-rest-swagger==2.0.5
+pip install djangorestframework==3.4.4
+pip install django-cors-headers==2.2.0
+pip install mysql-python==1.2.5
+pip install numpy==1.15.4
+
+# 为了安装scikit-image==0.14.1，需要如下前提包
+pip install cloudpickle==0.5.6
+pip install pillow==5.0.0
+pip install scipy==1.0.1
+pip install six==1.11.0
+pip install PyWavelets==1.0.0
+pip install networkx==2.1
+pip install matplotlib==2.2.2
+pip install dask[array]==0.19.1
+pip install scikit-image==0.14.1
+
+# 安装docx
+pip install python-docx==0.8.7
+pip install docxtpl==0.6.3
+
+# tensorflow sever
+pip install tensorflow==1.4.0
+pip install tensorflow-serving-api==1.12.0
+pip install torch==0.4.1
+
+# scikit分类
+pip install -U scikit-learn==0.19.2
+
+部署命令：
+1、将工程项目放在/var/www/路径下
+2、配置apache 
+cd /etc/apache2
+（1）sites-available 里面的LaserBreast.conf 配置文件，设置虚拟环境路径等
+（2）sites-enabled 里面的LaserBreast.conf 是由sites-available 里面的LaserBreast.conf 生成的
+（3）ports.conf 配置监听端口，与LaserBreast.conf的保持一致
