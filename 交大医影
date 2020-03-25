@@ -1,0 +1,14 @@
+项目IP（端口）：http://123.56.247.133:8099/
+项目文件路径：/home/zzh/data/apache-tomcat-7.0.75
+运行方式：tomcat
+---bin: 存放项目运行的脚本 startup.sh等。
+---conf：存放配置文件，主要修改server.xml
+---logs：存放日志文件
+---webapps：存放需要运行的项目，xnat项目放在ROOT目录下。
+
+
+需要用到的命令：
+启动tomcat：sh startup.sh
+查看运行日志： tail logs/catalina.out
+
+访问端口的设置在server.xml中设置。（注意端口是否被占用，端口被占用启动不了）
